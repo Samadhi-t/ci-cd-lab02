@@ -13,14 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set Up JDK
+      
+      - name: Setup Java
         uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
 
-      - name: Compile Java Program
-        run: javac Main.java
-
-      - name: Run Java Program
-        run: java Main
